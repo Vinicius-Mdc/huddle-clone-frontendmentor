@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/bg-desktop.svg") no-repeat, hsl(257, 40%, 49%);
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
+.header {
+  margin: 20px 50px;
+}
+
+.header img {
+  width: 200px;
+  height: auto;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin: 20px 0;
+}
+
+.main-presentation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.mainpr-left {
+  width: 50%;
+}
+
+.mainpr-right {
+  width: 50%;
+}
+.mainpr-left > img {
+  width: 100%;
+  height: 400px;
+}
+
+.mainpr-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  justify-content: center;
+  color: white;
+}
+
+.mainpr-right > h1 {
+  line-height: 45px;
+  margin-bottom: 10px;
+}
+
+.main-register {
+  font-size: 15px;
+  margin-top: 20px;
+  color: hsl(257, 40%, 49%);
+  background: white;
+  border: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  align-self: flex-start;
+}
+
+.main-register:hover {
+  cursor: pointer;
+}
+
+.main-register:active {
+  color: white;
+  background-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+.social-media {
+  align-self: flex-end;
+}
+
+.social-media > a {
+  color: white;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  margin: 3px;
+}
+
+.social-media > a > i {
+  width: 16px;
+  height: 16px;
+  text-align: center;
+}
+
+.social-media > a:hover {
+  cursor: pointer;
+}
+
+.social-media > a:active {
+  color: hsl(300, 69%, 71%);
+  border-color: hsl(300, 69%, 71%);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 766px) {
+  body {
+    background: url("images/bg-mobile.svg"), hsl(257, 40%, 49%);
+    background-size: 100% 100px;
+    background-repeat: no-repeat;
+  }
+
+  .mainpr-right > h1 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .main-presentation {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mainpr-left {
+    width: 100%;
+  }
+  .mainpr-left > img {
+    height: auto;
+  }
+  .mainpr-right {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+  .main-register {
+    align-self: center;
+  }
+  .social-media {
+    margin-top: 30px;
+    align-self: center;
+  }
+}
